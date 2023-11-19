@@ -1,0 +1,64 @@
+body{
+    background-color: #88ABFF;
+}
+.note{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    height: 320px;
+}
+.noteText{
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
+    overflow-y: auto;
+    margin-inline: 10px;
+}
+.addIcon{
+    width: 90px;
+    height: 90px;
+    border: 3px dashed #88ABFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+textarea{
+    resize: none;
+}
+.fa-plus,.addBtn{
+    color: #88ABFF
+}
+.addingNote{
+    background-color: #88ABFF;
+    color: #fff;
+}
+.addingNote:hover{
+    background-color: #88acffa1;
+    color: #000;
+
+}
+.bottomContent{
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+}
+i,span{
+    cursor: pointer;
+}
+.miniMenu{
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    bottom: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: 0.5s all ease-in-out;
+}
+.settings:hover .miniMenu{
+    transform: scale(1);
+}
+.delete:hover,.edit:hover{
+    background-color: #eee;
+}

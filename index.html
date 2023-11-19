@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Add Note App</title>
+</head>
+<body>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="modalTitle" class="modal-title" id="staticBackdropLabel">Add New Note</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="noteTitleInput" class="my-2">Title</label>
+                <input id="noteTitleInput" type="text" class="form-control" >
+                <label for="noteDateInput" class="my-2">Date</label>
+                <input id="noteDateInput" type="date" class="form-control" >
+                <label for="noteDescriptionInput" class="my-2">Description</label>
+                <textarea id="noteDescriptionInput" class="form-control" cols="30" rows="5"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="addNoteBtn" class="btn addingNote d-block">Add Note</button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="updateNoteBtn" class="btn addingNote d-none">Update Note</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <main class="container py-5">
+        <section class="row gy-4">
+            <div class="col-lg-4 m-auto col-md-6">
+                <div class="note d-flex justify-content-center fw-bolder align-items-center flex-column">
+                    <div  id="outerAddBtn" class="addIcon d-flex justify-content-center align-items-center"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <i class="fa-solid fa-plus fs-1"></i>
+                    </div>
+                    <p class="addBtn fs-4 mt-3">Add New Note</p>
+                </div>
+            </div>
+        </section>
+        <div  id="addNoteCard" class="row m-auto gy-3">
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
